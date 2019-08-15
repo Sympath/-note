@@ -1,0 +1,49 @@
+- css3
+  - transform
+    - skew
+    - translate   3d  平移
+    - scale    
+    - rotate    3d 旋转
+    - prespective   [x]px   景深 越小效果越明显 默认无限大
+    - 注意：
+      - 若想子元素的Z轴效果生效，应在父级元素上设置transform-style: preserve-3d;将之变为3d盒子
+      - prespective   是为了视觉效果而加景深的属性
+  - transition
+    - 时间
+    - 所作用的样式
+    - 运动形式
+      - linear 匀速
+      - ease 加速
+      - ease-out 减速
+      - ease-in-out 先加后减
+    - 注意
+      - transform集合属性会从后往前执行
+      - 图形操作均为矩阵乘法操作，所以才会出现从后向前的情况
+  - animation - @keyframes
+    - 必加
+      - animation-name 动画名
+      - animation-duration 动画执行时间
+      - animation-timing-function 运动状态
+        - linear 匀速
+        - ease 加速
+        - ease-out 减速
+        - ease-in-out 先加后减
+    - 扩展
+      - animation-fill-mode 填充模式 
+        - forward 
+      - animation-delay 延时
+      - animation-iteration-count 循环次数 
+        - infinite 无限
+      - animation-direction 循环时状态
+        - alternate 交替
+      - animation-play-state 状态
+        - paused 暂停动画
+        - runtime
+
+### 注意
+
+- 所有css3不会影响盒模型
+
+- DOM操作耗费性能的原因
+  - 重绘
+  - 重排

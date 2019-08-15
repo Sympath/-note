@@ -1,0 +1,8 @@
+- 查询已连接网络
+
+  ```
+  netsh wlan show profile "html5" key=clear
+  ```
+
+  
+
