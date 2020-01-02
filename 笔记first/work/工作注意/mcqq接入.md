@@ -1,0 +1,4 @@
+引入includes里的mqccnobtn以及_htm模板，内部已经定义好了mcqq方法，传参为点击事件事件源的类名，初始化时调用mcqq方法即可
+
+
+
